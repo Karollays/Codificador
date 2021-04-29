@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Codificador online</title>
+</head>
+<header>
+    <h1 id="titulo">Codificador online</h1>
+</header>
+
+<body>
+
+    <div id="bloco">
+        <input type='text' id="texto">
+        <select id="tipoEncriptacao">
+            <option value="selecione" disabled selected>Selecione</option>
+            <option value="cifradecesar">Cifra de César</option>
+            <option value="base64">Base 64</option>
+        </select>
+
+        <label for=""><strong>Escolha uma das opções</strong></label>
+        <input type="radio" name="codificacao" id="codificar">
+        <label for="codificar">Codificar</label>
+        <input type="radio" name="codificacao" id="descodificar">
+        <label for="descodificar">Descodificar</label>
+        <button id="enviar" onclick="codifica()">Enviar</button>
+        <div id="resultado">Resultado</div>
+        <input type="number" id="numero">
+    </div>
+
+
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
